@@ -67,8 +67,7 @@ export default function Home() {
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-6 py-6">
           <div
-            className="overflow-hidden rounded-[24px] bg-[#f6f7f9] flex flex-col md:flex-row items-center gap-10 md:gap-[80px]"
-            style={{ padding: "56px 50px 50px" }}
+            className="overflow-hidden rounded-[24px] bg-[#f6f7f9] flex flex-col md:flex-row items-center gap-8 md:gap-[80px] px-5 py-8 md:px-[50px] md:py-[56px]"
           >
             {/* Left - Text */}
             <div className="flex-1 flex flex-col justify-center">
@@ -112,8 +111,7 @@ export default function Home() {
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-6 py-3">
           <div
-            className="rounded-[24px] bg-[#f6f7f9] flex flex-col gap-8 md:gap-[60px]"
-            style={{ padding: "56px 50px 24px" }}
+            className="rounded-[24px] bg-[#f6f7f9] flex flex-col gap-8 md:gap-[60px] px-5 py-8 md:px-[50px] md:py-[56px] md:pb-[24px]"
           >
             {/* Badge */}
             <div>
@@ -171,7 +169,7 @@ export default function Home() {
       {/* ── Nuestras Líneas ── */}
       <section className="w-full bg-white">
         <div className="mx-auto max-w-[1280px] px-6">
-          <div className="py-14 md:py-20 px-4 md:px-12">
+          <div className="py-8 md:py-20 px-1 md:px-12">
             {/* Badge */}
             <div className="mb-6">
               <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#133241] uppercase">
