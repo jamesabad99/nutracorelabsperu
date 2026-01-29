@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Home() {
-  const whatsappNumber = "51948081210";
+  const whatsappNumber = "51940801210";
   const wa = (text: string) =>
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
@@ -54,7 +54,7 @@ export default function Home() {
             priority
           />
           <a
-            href={wa("Hola, quiero contactarme con un asesor")}
+            href={wa("Hola! Quisiera más información sobre sus productos")}
             target="_blank"
             className="rounded-full bg-white px-6 py-2.5 text-[14px] font-medium text-[#184054] hover:opacity-90 transition-opacity"
           >
@@ -84,7 +84,7 @@ export default function Home() {
               </p>
               <div className="mt-8">
                 <a
-                  href={wa("Hola, quiero hablar con un asesor")}
+                  href={wa("Hola! Quisiera más información sobre sus productos")}
                   target="_blank"
                   className="inline-flex items-center gap-2 rounded-full bg-[#133241] px-6 py-3 text-[14px] font-medium text-white hover:opacity-90 transition-opacity"
                 >
@@ -203,25 +203,21 @@ export default function Home() {
               </div>
 
               {/* Right - Brand logos */}
-              <div className="md:w-[50%] flex flex-row items-center justify-center gap-14 md:gap-20">
-                <div className="h-56 md:h-80 flex items-center">
-                  <Image
-                    src="/images/stamp.png"
-                    alt="NutraHer"
-                    width={600}
-                    height={600}
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
-                <div className="h-60 md:h-[22rem] flex items-center">
-                  <Image
-                    src="/images/enfoque-img.png"
-                    alt="NutraZen"
-                    width={600}
-                    height={600}
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
+              <div className="md:w-[55%] flex flex-row items-center justify-center gap-0">
+                <Image
+                  src="/images/stamp.png"
+                  alt="NutraHer"
+                  width={320}
+                  height={320}
+                  className="w-[200px] md:w-[300px] h-auto object-contain"
+                />
+                <Image
+                  src="/images/enfoque-img.png"
+                  alt="NutraZen"
+                  width={320}
+                  height={320}
+                  className="w-[180px] md:w-[280px] h-auto object-contain"
+                />
               </div>
             </div>
           </div>
@@ -272,7 +268,7 @@ export default function Home() {
                     <div className="flex flex-col gap-4">
                       {product.comingSoon && (
                         <div>
-                          <span className="inline-flex rounded-full bg-[#F2E4C9] px-8 py-3 text-[14px] font-medium tracking-[0.15em] text-[#133241] uppercase">
+                          <span className="inline-flex rounded-full bg-[#F2E4C9]/60 px-5 py-2 text-[11px] font-medium tracking-[0.15em] text-[#133241]/70 uppercase">
                             Próximamente
                           </span>
                         </div>
@@ -285,7 +281,7 @@ export default function Home() {
                       </p>
                     </div>
                     <a
-                      href={wa(`Hola, quiero solicitar: ${product.name}`)}
+                      href={wa("Hola! Quisiera más información sobre sus productos")}
                       target="_blank"
                       className="inline-flex w-fit items-center gap-2 rounded-full bg-[#184054] px-6 py-3 text-[14px] font-normal tracking-[-0.01em] text-white hover:opacity-90 transition-opacity"
                     >
