@@ -72,11 +72,10 @@ export default function Home() {
           >
             {/* Left - Text */}
             <div className="flex-1 flex flex-col justify-center">
-              <h1 className="text-[48px] md:text-[56px] lg:text-[68px] leading-[120%] font-normal tracking-[-0.06em] text-[#111]">
-                Salud premium para el bienestar{" "}
-                <span className="text-[#133241]">integral</span>
+              <h1 className="text-[48px] md:text-[56px] lg:text-[68px] leading-[120%] font-normal tracking-[-0.06em] text-[#133241]">
+                Salud premium para el bienestar integral
               </h1>
-              <p className="mt-6 max-w-lg text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#111]/80">
+              <p className="mt-6 max-w-lg text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#133241]/80">
                 Probióticos y suplementos nutracéuticos elaborados en países
                 de alta vigilancia sanitaria como Estados Unidos, desarrollados
                 para acompañar la salud intestinal, el bienestar general y
@@ -118,7 +117,7 @@ export default function Home() {
           >
             {/* Badge */}
             <div>
-              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#111] uppercase">
+              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#133241] uppercase">
                 Nuestro Enfoque
               </span>
             </div>
@@ -127,12 +126,12 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-[60px]">
               {/* Left - Title */}
               <div className="flex-1 max-w-[600px]">
-                <h2 className="text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#111]">
+                <h2 className="text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#133241]">
                   Una nueva generación de suplementos nutracéuticos premium
                 </h2>
               </div>
               {/* Right - Paragraphs */}
-              <div className="flex-1 space-y-5 text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#111]/80">
+              <div className="flex-1 space-y-5 text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#133241]/80">
                 <p>
                   En NutraCore desarrollamos suplementos dietéticos de alta
                   calidad orientados a la salud intestinal y el bienestar
@@ -175,7 +174,7 @@ export default function Home() {
           <div className="py-14 md:py-20 px-4 md:px-12">
             {/* Badge */}
             <div className="mb-6">
-              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#111] uppercase">
+              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#133241] uppercase">
                 Nuestras Líneas
               </span>
             </div>
@@ -184,10 +183,10 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-[60px]">
               {/* Left - Title + paragraphs */}
               <div className="md:w-[50%] shrink-0">
-                <h2 className="text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#111]">
+                <h2 className="text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#133241]">
                   Suplementos diseñados para distintas necesidades
                 </h2>
-                <div className="mt-4 space-y-4 text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#111]/80">
+                <div className="mt-4 space-y-4 text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#133241]/80">
                   <p>
                     NutraCore.Labs ofrece dos líneas de productos principales:
                     probióticos y multivitamínicos.  Cada línea tiene una variedad  de
@@ -230,16 +229,16 @@ export default function Home() {
           <div className="rounded-[24px] bg-[#F1F2F4] px-6 py-10 md:px-[58px] md:py-[60px]">
             {/* Header: badge + title/subtitle row */}
             <div className="mb-10">
-              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#111] uppercase">
+              <span className="inline-flex rounded-full border-2 border-[#111] px-7 py-3 text-[14px] font-medium tracking-[0.15em] text-[#133241] uppercase">
                 Productos Destacados
               </span>
             </div>
 
             <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-[80px] mb-14 md:mb-16">
-              <h2 className="flex-1 text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#111]">
+              <h2 className="flex-1 text-[28px] md:text-[32px] leading-[110%] font-normal tracking-[-0.06em] text-[#133241]">
                 Suplementos diseñados para acompañar la salud integral
               </h2>
-              <p className="flex-1 max-w-[538px] text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#111]/60">
+              <p className="flex-1 max-w-[538px] text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#133241]/60">
                 Desarrollamos suplementos enfocados en el bienestar diario,
                 formulados con criterio científico, ingredientes de alta calidad y
                 estándares internacionales. Cada producto está pensado para
@@ -273,10 +272,10 @@ export default function Home() {
                           </span>
                         </div>
                       )}
-                      <h3 className="text-[20px] leading-[140%] font-normal tracking-[-0.04em] text-[#111]">
+                      <h3 className="text-[20px] leading-[140%] font-normal tracking-[-0.04em] text-[#133241]">
                         {product.name}
                       </h3>
-                      <p className="text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#111]/60">
+                      <p className="text-[16px] leading-[150%] font-light tracking-[-0.01em] text-[#133241]/60">
                         {product.description}
                       </p>
                     </div>
@@ -337,7 +336,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-center md:justify-between gap-4">
               <div className="flex items-center gap-4">
                 <a
-                  href="https://fb.com/produlis"
+                  href="https://www.facebook.com/share/1Hrkqc7e2w/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener"
                   className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:border-white/30 transition-colors"
@@ -353,7 +352,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://instagram.com/produlis.agency/"
+                  href="https://www.instagram.com/nutracore.labs?igsh=MXNhZm42MjN2ZzVo&utm_source=qr"
                   target="_blank"
                   rel="noopener"
                   className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:border-white/30 transition-colors"
@@ -381,7 +380,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/ncl-nutracore-labs/"
+                  href="https://www.linkedin.com/company/ncl-nutracore-labs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3BoSl0%2F04KQTqb1oXsUGsTCw%3D%3D"
                   target="_blank"
                   rel="noopener"
                   className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 hover:border-white/30 transition-colors"
