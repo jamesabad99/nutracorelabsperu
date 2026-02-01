@@ -1,5 +1,143 @@
 import Image from "next/image";
 
+const siteUrl = "https://nutracorelabs.vercel.app";
+
+function JsonLd() {
+  const organization = {
+    "@type": "Organization",
+    name: "NutraCore Labs",
+    url: siteUrl,
+    logo: `${siteUrl}/images/logo.svg`,
+    description:
+      "NutraCore Labs desarrolla suplementos dietéticos premium enfocados en salud intestinal y bienestar femenino, elaborados en Estados Unidos bajo estándares FDA y registrados ante DIGEMID en Perú.",
+    sameAs: [
+      "https://www.facebook.com/share/1Hrkqc7e2w/?mibextid=wwXIfr",
+      "https://www.instagram.com/nutracore.labs",
+      "https://www.linkedin.com/company/ncl-nutracore-labs/",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+51-940-801-210",
+      contactType: "sales",
+      availableLanguage: "Spanish",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "PE",
+    },
+  };
+
+  const products = [
+    {
+      "@type": "Product",
+      name: "Probiotic 60 Billions + Prebiotics",
+      description:
+        "Suplemento dietético con 60 billones de UFC de probióticos y prebióticos con MAKTREK® Bi-Pass Technology. Registro Sanitario: DE 5871.",
+      brand: { "@type": "Brand", name: "NutraZen" },
+      image: `${siteUrl}/images/product-5.jpg`,
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "PEN",
+        url: siteUrl,
+      },
+    },
+    {
+      "@type": "Product",
+      name: "Women's Probiotic 50 Billions + Prebiotics",
+      description:
+        "Suplemento dietético formulado para la mujer con 50 billones de UFC, apoya el equilibrio de la microbiota intestinal y vaginal. Registro Sanitario: DE 5872.",
+      brand: { "@type": "Brand", name: "NutraZen" },
+      image: `${siteUrl}/images/product-2.jpg`,
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "PEN",
+        url: siteUrl,
+      },
+    },
+    {
+      "@type": "Product",
+      name: "Myo & D-Chiro Inositol Plus",
+      description:
+        "Suplemento dietético vegano con Myo-Inositol y D-Chiro Inositol en proporción 4:1 con Caronositol® para equilibrio metabólico y hormonal femenino. Registro Sanitario: DE 5865.",
+      brand: { "@type": "Brand", name: "NutraHer" },
+      image: `${siteUrl}/images/product-1.jpg`,
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "PEN",
+        url: siteUrl,
+      },
+    },
+  ];
+
+  const website = {
+    "@type": "WebSite",
+    name: "NutraCore Labs",
+    url: siteUrl,
+    description:
+      "Suplementos dietéticos premium: probióticos, inositol, resveratrol y soporte para menopausia. Elaborados en EE.UU., aprobados por FDA, registrados ante DIGEMID.",
+    inLanguage: "es",
+    publisher: { "@id": `${siteUrl}/#organization` },
+  };
+
+  const faq = {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Dónde se fabrican los suplementos NutraCore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Los suplementos NutraCore son elaborados en países de alta vigilancia sanitaria como Estados Unidos y Europa, bajo estrictos estándares internacionales de calidad, seguridad y Buenas Prácticas de Manufactura (GMP), en instalaciones registradas ante la FDA.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué líneas de productos ofrece NutraCore Labs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "NutraCore Labs ofrece dos líneas principales: NutraHer, enfocada en el bienestar femenino con productos como Myo & D-Chiro Inositol, Resveratrol y Menopause Support; y NutraZen, enfocada en salud intestinal con probióticos de 50 y 60 billones de UFC.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Los productos NutraCore cuentan con registro sanitario en Perú?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, todos los productos NutraCore cumplen con los requisitos regulatorios de DIGEMID (Dirección General de Medicamentos, Insumos y Drogas) del Perú y cuentan con registros sanitarios vigentes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué es la tecnología MAKTREK® Bi-Pass?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "MAKTREK® Bi-Pass Technology es una tecnología diseñada para proteger los probióticos durante su paso por el tracto digestivo, favoreciendo su llegada al intestino donde pueden ejercer su función beneficiosa.",
+        },
+      },
+    ],
+  };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { ...organization, "@id": `${siteUrl}/#organization` },
+      website,
+      ...products,
+      faq,
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function Home() {
   const whatsappNumber = "51940801210";
   const wa = (text: string) =>
@@ -41,6 +179,8 @@ export default function Home() {
   ];
 
   return (
+    <>
+    <JsonLd />
     <main className="min-h-screen bg-white text-[#133241]">
       {/* ── Header ── */}
       <header className="w-full bg-[#184054]">
@@ -399,5 +539,6 @@ export default function Home() {
         </div>
       </footer>
     </main>
+    </>
   );
 }
