@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://nutracorelabs.vercel.app/sitemap.xml",
+    sitemap: "https://www.nutracorelabsperu.com/sitemap.xml",
   };
 }

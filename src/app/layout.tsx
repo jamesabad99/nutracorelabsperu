@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 const siteName = "NutraCore Labs";
-const siteUrl = "https://nutracorelabs.vercel.app";
+const siteUrl = "https://www.nutracorelabsperu.com";
 const title = "NutraCore Labs | Suplementos Premium, Probióticos y Nutracéuticos en Perú";
 const description =
   "NutraCore Labs ofrece suplementos dietéticos premium: probióticos de 50 y 60 billones de UFC, inositol, resveratrol y soporte para menopausia. Elaborados en EE.UU., aprobados por FDA y registrados ante DIGEMID. Líneas NutraHer y NutraZen para salud intestinal y bienestar femenino.";

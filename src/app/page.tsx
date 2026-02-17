@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const siteUrl = "https://nutracorelabs.vercel.app";
+const siteUrl = "https://www.nutracorelabsperu.com";
 
 function JsonLd() {
   const organization = {
