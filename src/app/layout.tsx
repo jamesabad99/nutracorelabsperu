@@ -93,6 +93,9 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   category: "health",
+  verification: {
+    google: "kWvF8HygGOcaAXsCi-fAP0v_ZbZQX1tRRyeENLvoj24",
+  },
 };
 
 export default function RootLayout({
